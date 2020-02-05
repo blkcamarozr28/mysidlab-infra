@@ -20,10 +20,3 @@
       hostname:
         name: "{{ hostname }}"
           
-    - name: Dump host facts
-      setup: 
-
-    - name: Send host config notification
-      slack:
-        token: "{{ token }}"
-        msg: "Host {{ hostname }} is now in {{ tz }}"
